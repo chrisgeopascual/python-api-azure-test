@@ -2,6 +2,8 @@ import pytest
 from api_clients.books_client import BooksClient
 from api_clients.authors_client import AuthorsClient
 from api_clients.activities_client import ActivitiesClient
+from api_clients.coverphotos_client import CoverPhotosClient
+
 
 @pytest.fixture
 def books_client():
@@ -14,3 +16,7 @@ def authors_client():
 @pytest.fixture
 def activities_client():
     return ActivitiesClient()
+
+@pytest.fixture
+def coverphotos_client():
+    return CoverPhotosClient()
